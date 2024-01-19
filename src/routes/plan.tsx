@@ -110,7 +110,7 @@ export default function PlanPage() {
             type="button"
             className="transition-colors text-app-cool-gray hover:text-app-marine-blue active:text-app-marine-blue"
             onClick={() => {
-              navigate("/info", { state: location.state });
+              navigate("/", { state: location.state });
             }}
           >
             Go back

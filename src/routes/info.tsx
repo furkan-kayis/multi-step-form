@@ -7,12 +7,11 @@ import { cn } from "../lib/utils";
 const infoSchema = z.object({
   name: z.string().min(1, "This field is required"),
   email: z.string().email(),
-  phone: z
-    .string()
-    .regex(
-      /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
-      "Invalid number"
-    ),
+  phone: z.string().regex(
+    // eslint-disable-next-line no-useless-escape
+    /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
+    "Invalid number"
+  ),
 });
 
 type InfoSchema = z.infer<typeof infoSchema>;

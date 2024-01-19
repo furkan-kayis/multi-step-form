@@ -12,7 +12,7 @@ import ThanksPage from "./routes/thanks";
 
 const routes = [
   {
-    path: "/info",
+    path: "/",
     element: <InfoPage />,
   },
   {

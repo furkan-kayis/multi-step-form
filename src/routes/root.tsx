@@ -5,7 +5,7 @@ export default function RootLayout() {
   const location = useLocation();
 
   const steps = [
-    { title: "Your info", path: "/info" },
+    { title: "Your info", path: "/" },
     { title: "Select plan", path: "/plan" },
     { title: "Add-ons", path: "/addons" },
     { title: "Summary", path: "/summary" },
